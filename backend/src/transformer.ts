@@ -42,15 +42,19 @@ export const transformarDatos = (input: LegacyInput): DashboardOutput => {
   input.pedidos.forEach((p: LegacyPedido) => {
     let pSubtotal = 0;
     let pDescuento = 0;
-    let pCantidadItems = 0;
+    
+    
+    const pCantidadItems = p.items.length; 
 
     p.items.forEach(item => {
       const precioTotalItem = item.precio_unitario * item.cantidad;
-      const descuentoItem = precioTotalItem * (item.descuento_porcentaje / 100);
+      
+     
+      // Esto elimina los decimales .5 antes de sumar al total
+      const descuentoItem = Math.round(precioTotalItem * (item.descuento_porcentaje / 100));
       
       pSubtotal += precioTotalItem;
       pDescuento += descuentoItem;
-      pCantidadItems += item.cantidad;
     });
 
     const pTotal = pSubtotal - pDescuento;
