@@ -1,0 +1,111 @@
+{
+  "pedidos": [
+    {
+      "pedido_id": "ORD-2024-001",
+      "fecha_creacion": "2024-01-15T10:30:00Z",
+      "cliente": {
+        "id": "USR-100",
+        "nombre_completo": "María García López",
+        "email": "maria.garcia@email.com",
+        "direccion": {
+          "calle": "Av. Providencia 1234",
+          "ciudad": "Santiago",
+          "codigo_postal": "7500000",
+          "pais": "Chile"
+        }
+      },
+      "items": [
+        {
+          "sku": "LAPTOP-HP-001",
+          "nombre_producto": "Laptop HP Pavilion 15",
+          "cantidad": 1,
+          "precio_unitario": 599990,
+          "descuento_porcentaje": 10
+        },
+        {
+          "sku": "MOUSE-LOG-002",
+          "nombre_producto": "Mouse Logitech MX Master 3",
+          "cantidad": 2,
+          "precio_unitario": 89990,
+          "descuento_porcentaje": 0
+        }
+      ],
+      "estado": "PENDIENTE",
+      "metodo_pago": "TARJETA_CREDITO",
+      "notas": "Entregar en horario de oficina"
+    },
+    {
+      "pedido_id": "ORD-2024-002",
+      "fecha_creacion": "2024-01-16T14:45:00Z",
+      "cliente": {
+        "id": "USR-101",
+        "nombre_completo": "Carlos Rodríguez Soto",
+        "email": "carlos.rodriguez@email.com",
+        "direccion": {
+          "calle": "Los Leones 567",
+          "ciudad": "Santiago",
+          "codigo_postal": "7510000",
+          "pais": "Chile"
+        }
+      },
+      "items": [
+        {
+          "sku": "MONITOR-SAMSUNG-001",
+          "nombre_producto": "Monitor Samsung 27 4K",
+          "cantidad": 1,
+          "precio_unitario": 349990,
+          "descuento_porcentaje": 15
+        }
+      ],
+      "estado": "ENVIADO",
+      "metodo_pago": "TRANSFERENCIA",
+      "notas": null
+    },
+    {
+      "pedido_id": "ORD-2024-003",
+      "fecha_creacion": "2024-01-17T09:15:00Z",
+      "cliente": {
+        "id": "USR-102",
+        "nombre_completo": "Ana Martínez Pérez",
+        "email": "ana.martinez@email.com",
+        "direccion": {
+          "calle": "Alameda 890",
+          "ciudad": "Valparaíso",
+          "codigo_postal": "2340000",
+          "pais": "Chile"
+        }
+      },
+      "items": [
+        {
+          "sku": "TECLADO-RAZER-001",
+          "nombre_producto": "Teclado Razer BlackWidow",
+          "cantidad": 1,
+          "precio_unitario": 129990,
+          "descuento_porcentaje": 5
+        },
+        {
+          "sku": "MOUSE-RAZER-001",
+          "nombre_producto": "Mouse Razer DeathAdder",
+          "cantidad": 1,
+          "precio_unitario": 59990,
+          "descuento_porcentaje": 5
+        },
+        {
+          "sku": "PAD-RAZER-001",
+          "nombre_producto": "Mousepad Razer Gigantus",
+          "cantidad": 1,
+          "precio_unitario": 29990,
+          "descuento_porcentaje": 0
+        }
+      ],
+      "estado": "ENTREGADO",
+      "metodo_pago": "TARJETA_DEBITO",
+      "notas": "Cliente frecuente - priorizar"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "generado": "2024-01-18T00:00:00Z",
+    "moneda": "CLP"
+  }
+}
