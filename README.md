@@ -48,7 +48,11 @@ El proyecto cumple con el 100% de los requerimientos base y todos los puntos opc
 - ✅ Tests Unitarios: Verificación automática de la lógica de negocio con Jest.
 
 - ✅ UX: Feedback visual de carga (Loading states) y manejo elegante de errores.
+
+  
 ![Mobile View](./screenshots/mobile1.png)
+
+
 ![Mobile View](./screenshots/mobile2.png)
 
 # 🗂️ Estructura del Proyecto
@@ -114,6 +118,8 @@ Para ejecutar las pruebas:
 
 - cd backend
 - npx jest
+
+  
 ![Test View](./screenshots/test.png)
 
 
